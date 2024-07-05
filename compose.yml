@@ -1,0 +1,10 @@
+services:
+  spa:
+    image: spa
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - '5173:80'
